@@ -1,6 +1,6 @@
 Attribute VB_Name = "DevTools"
 Public Sub Export()
-    ExportSourceFiles ("C:\Users\125870\OneDrive - UTS\Scripts and Code\Email Merge VBA\Modules\")
+    ExportSourceFiles (ThisWorkbook.Path)
 
 End Sub
 
@@ -9,12 +9,13 @@ Public Sub ExportSourceFiles(destPath As String)
     
     For Each component In Application.VBE.ActiveVBProject.VBComponents
         
-        
-        
-        If component.Type = vbext_ct_ClassModule Or component.Type = vbext_ct_StdModule Or component.Type = vbext_ct_MSForm Then
-            component.Export destPath & component.Name & ToFileExtension(component.Type)
+        If component.Type = vbext_ct_ClassModule Or component.Type = vbext_ct_StdModule Then
+            component.Export destPath & "\Modules\" & component.Name & ToFileExtension(component.Type)
         End If
         
+        If component.Type = vbext_ct_MSForm Then
+            component.Export destPath & "\UserForms\" & component.Name & ToFileExtension(component.Type)
+        End If
     Next
  
 End Sub
