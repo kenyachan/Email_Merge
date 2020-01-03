@@ -1,0 +1,33 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="BulkEmailingTool" label="Email Merge">
+        
+        <group id="EmailFields" label="Toggle Email Fields">
+          <button id="OnBehalfOfTogglebtn" label="On Behalf Of" size="large" onAction="RibbonButtons.ToggleOnBehalfOf" imageMso="ShowFrom" />
+          <button id="CCTogglebtn" label="CC" size="large" onAction="RibbonButtons.ToggleCC" imageMso="CreateMailRule" />
+          <button id="BCCTogglebtn" label="BCC" size="large" onAction="RibbonButtons.ToggleBCC" screentip="BCC" supertip="Toggling the BCC field will enable/disable the BCC field in the emails." imageMso="ShowBcc" />
+		      <button id="AttachmentsTogglebtn" label="Attachments" size="large" onAction="RibbonButtons.ToggleAttachments" imageMso="FileSendAsAttachment" />
+        </group>
+        
+        <group id="Email" label="Mailing">
+          <button id="CreateEmailsbtn" label="Create Emails" size="large" onAction="RibbonButtons.CreateEmails" imageMso="EnvelopesAndLabelsDialog" />
+          <button id="AddAttachmentsbtn" label="Add Attachments" size="large" onAction="RibbonButtons.AddAttachments" imageMso="AttachMenu" />
+          <button id="AddSequentialAttachmentsbtn" label="Add Sequential Attachments" size="large" onAction="RibbonButtons.AddSequentialAttachments" imageMso="AttachMenu" />
+		      <!--<button id="OpenOutlookbtn" label="Open Outlook" size="large" onAction="StartOutlookApplication" image="OutlookImg" />-->
+        </group>
+        <!--
+		    <group id="Templates" label="Template">
+		      <button id="CreateTemplatebtn" label="New Template" size="large" onAction="CreateNewTemplate" image="WordImg" />
+        </group>
+        -->	
+        <group id="Settings" label="Settings">
+          <button id="Settingsbtn" label="Settings" size="normal" onAction="RibbonButtons.OpenfrmSettings" image="SettingsImg" />
+		      <button id="NewSheetbtn" label="New Sheet" size="normal" onAction="RibbonButtons.CreateNewSheet" imageMso="TableStyleNew" />
+		      <button id="Aboutbtn" label="About Email Merge" size="large" onAction="RibbonButtons.OpenfrmAbout" image="UTSEmblemImg" />
+        </group>
+        
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
