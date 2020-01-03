@@ -9,7 +9,9 @@ Public Sub ExportSourceFiles(destPath As String)
     
     For Each component In Application.VBE.ActiveVBProject.VBComponents
         
-        If component.Type = vbext_ct_ClassModule Or component.Type = vbext_ct_StdModule Then
+        
+        
+        If component.Type = vbext_ct_ClassModule Or component.Type = vbext_ct_StdModule Or component.Type = vbext_ct_MSForm Then
             component.Export destPath & component.Name & ToFileExtension(component.Type)
         End If
         
