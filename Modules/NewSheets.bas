@@ -17,7 +17,7 @@ Public Sub NewSheet()
     End If
     
     Set sht = Sheets.Add(After:=Sheets(Worksheets.Count))
-    sht.name = newSheetName
+    sht.Name = newSheetName
     
     BuildSheet sht
 End Sub
@@ -28,7 +28,7 @@ Private Function SheetExists(sheetToFind As String) As Boolean
     SheetExists = False
     
     For Each sht In Worksheets
-        If sheetToFind = sht.name Then
+        If sheetToFind = sht.Name Then
             SheetExists = True
             Exit Function
         End If
@@ -58,7 +58,7 @@ Private Sub BuildSheet(sht As Worksheet)
     sht.Range("H:S").ColumnWidth = 16.43
     
     With sht.Range("1:1")
-        .Font.name = "Segoe UI"
+        .Font.Name = "Segoe UI"
         .Font.Size = 12
         .Interior.Color = 14277081
         .RowHeight = 20.25

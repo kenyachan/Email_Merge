@@ -99,11 +99,11 @@ Private Function ExecuteMerge(templatePath As String) As Object
     
     With wdTemplate.MailMerge
         .OpenDataSource _
-                name:=GetSetting("Data_Source"), _
+                Name:=GetSetting("Data_Source"), _
                 AddToRecentFiles:=False, _
                 Revert:=False, _
                 Connection:="Data Source=" & GetSetting("Data_Source") & ";Mode=Read", _
-                SQLStatement:="SELECT * FROM `" & ActiveSheet.name & "$`"
+                SQLStatement:="SELECT * FROM `" & ActiveSheet.Name & "$`"
         .ViewMailMergeFieldCodes = False                    ' "Preview Results"
         .Execute                                            ' Execute the merge; if saving backup, you need to execute the merge
     End With
