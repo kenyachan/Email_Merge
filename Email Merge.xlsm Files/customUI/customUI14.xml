@@ -24,7 +24,6 @@
         <group id="Settings" label="Settings">
           <button id="Settingsbtn" label="Settings" size="normal" onAction="RibbonButtons.OpenfrmSettings" image="SettingsImg" />
 		      <button id="NewSheetbtn" label="New Sheet" size="normal" onAction="RibbonButtons.CreateNewSheet" imageMso="TableStyleNew" />
-		      <button id="Aboutbtn" label="About Email Merge" size="large" onAction="RibbonButtons.OpenfrmAbout" image="UTSEmblemImg" />
         </group>
         
       </tab>

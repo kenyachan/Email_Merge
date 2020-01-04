@@ -2,7 +2,6 @@
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
     <Relationship Id="AttachmentImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Attachment.png"/>
     <Relationship Id="OutlookImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Outlook.png"/>
-    <Relationship Id="UTSEmblemImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/UTSEmblem.png"/>
     <Relationship Id="WordImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Word.png"/>
     <Relationship Id="SettingsImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Settings.png"/>
 </Relationships>
