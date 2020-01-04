@@ -14,13 +14,8 @@
           <button id="CreateEmailsbtn" label="Create Emails" size="large" onAction="RibbonButtons.CreateEmails" imageMso="EnvelopesAndLabelsDialog" />
           <button id="AddAttachmentsbtn" label="Add Attachments" size="large" onAction="RibbonButtons.AddAttachments" imageMso="AttachMenu" />
           <button id="AddSequentialAttachmentsbtn" label="Add Sequential Attachments" size="large" onAction="RibbonButtons.AddSequentialAttachments" imageMso="AttachMenu" />
-		      <!--<button id="OpenOutlookbtn" label="Open Outlook" size="large" onAction="StartOutlookApplication" image="OutlookImg" />-->
         </group>
-        <!--
-		    <group id="Templates" label="Template">
-		      <button id="CreateTemplatebtn" label="New Template" size="large" onAction="CreateNewTemplate" image="WordImg" />
-        </group>
-        -->	
+  
         <group id="Settings" label="Settings">
           <button id="Settingsbtn" label="Settings" size="normal" onAction="RibbonButtons.OpenfrmSettings" imageMso="AdministrationHome" />
 		      <button id="NewSheetbtn" label="New Sheet" size="normal" onAction="RibbonButtons.CreateNewSheet" imageMso="TableStyleNew" />
