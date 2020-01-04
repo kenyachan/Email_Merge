@@ -22,7 +22,7 @@
         </group>
         -->	
         <group id="Settings" label="Settings">
-          <button id="Settingsbtn" label="Settings" size="normal" onAction="RibbonButtons.OpenfrmSettings" image="SettingsImg" />
+          <button id="Settingsbtn" label="Settings" size="normal" onAction="RibbonButtons.OpenfrmSettings" imageMso="AdministrationHome" />
 		      <button id="NewSheetbtn" label="New Sheet" size="normal" onAction="RibbonButtons.CreateNewSheet" imageMso="TableStyleNew" />
         </group>
         

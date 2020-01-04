@@ -3,5 +3,4 @@
     <Relationship Id="AttachmentImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Attachment.png"/>
     <Relationship Id="OutlookImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Outlook.png"/>
     <Relationship Id="WordImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Word.png"/>
-    <Relationship Id="SettingsImg" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Settings.png"/>
 </Relationships>
