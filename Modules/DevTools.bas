@@ -1,4 +1,6 @@
 Attribute VB_Name = "DevTools"
+Option Private Module
+
 Public Sub Export()
     ExportSourceFiles (ThisWorkbook.Path)
 
