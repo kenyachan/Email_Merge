@@ -6,7 +6,7 @@ This repository contains the VBA code for an Excel based *Mail Merge* tool. It a
 
 One of the main limitations of using Mail Merge in Microsoft Word is that you could not send emails from a shared inbox without having to set it up as the primary mailing profile in Windows.
 
-Another limitation to Mail Merge in Microsoft Word is add attachments to the email.
+Another limitation to Mail Merge in Microsoft Word is it can't add attachments to the email.
 
 The Email Merge tool was created to send emails from a shared inbox and include attachments.
 
